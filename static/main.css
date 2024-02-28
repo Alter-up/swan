@@ -8,21 +8,7 @@ html {
   .css-c2hg41 { display: none; }
 }
 
-h4:nth-last-child(2) {
-  display: flex!important;
-}
 
-h4 {
-display: none;
-}
-
-h5:nth-last-child(2) {
-  display: flex!important;
-}
-
-h5 {
-display: none;
-}
 body {
 	margin: 0
 }
