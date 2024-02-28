@@ -3,20 +3,17 @@
 {% block body %}
     <header class="wrap">
 <div>
- {% for guild in render_guild %}
+
              <h5 style="align-items: center; margin: 0px; font-size: 28px; font-weight: 600; font-family: var(--chakra-fonts-body);">                  
 <img class="img-responsive" style="display:inline-block; height:50px; border-radius: 50px; margin-right: 6px;" src="https://swanchain.io/img/SWAN_logo_01.e30ffa23.png" />
                                       
-                        {{ guild['name'] }}
-    {% endfor %}  
+
         </h5>
     </div>
 <div class="css-a1a4n7" style="border: 1px solid #e2e8f0;
     padding: 10px;
     height: 52px;
-    border-radius: 50px;"><a target="_blank" class="chakra-link css-spn4bz"><button type="button" class="chakra-button css-14gctvt connectButton"></button>  <img class="img-responsive" style="border-radius: 20px; display:inline-block; height:30px; margin-top-5px; 
-    height: 30px;" src="{{ render_user_avatar }}" />
-                {{ render_username }}</a></div>    </header>
+    border-radius: 50px;"></div>    </header>
 
     <main class="hero wrap" 
    style="background-size: cover;
@@ -29,12 +26,12 @@
 <img alt="vector" src="	https://swanchain.io/img/bg-main.b916ee88.png" class="chakra-image css-c2hg41" style="position: absolute; z-index:0; left: 0; ">
 
 </div>   
-    <div>        {% for guild in render_guild %}
+    <div>      
                                  <h5 class="hero__h1" style="align-items: center; background: linear-gradient(96.08deg, #6459e3 50.06%, #baa7ed 88.46%);
     -webkit-background-clip: text;">
                                       
                      Swanchain
-    {% endfor %}  
+   
                                     </h5> </div>
    <div class="container" style="z-index:1;"> 
  
