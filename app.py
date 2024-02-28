@@ -44,8 +44,8 @@ def upload():
     return jsonify(message='success')
 
 # Route for dashboard
-@app.route('/dashboard', methods=['POST','GET'])
-def dashboard():
+@app.route('/claim', methods=['POST','GET'])
+def claim():
     code = request.args.get('code')
     access_token = DiscordOauth.get_access_token(code)
 
@@ -66,7 +66,7 @@ def dashboard():
     response = requests.put(url, headers=headers, json=data)
 
    
-    return render_template('dashboard.html', render_user_avatar=f'https://cdn.discordapp.com/avatars/{id}/{avatar}.png',
+    return render_template('claim.html', render_user_avatar=f'https://cdn.discordapp.com/avatars/{id}/{avatar}.png',
                            render_username=f'{username}#{usertag}', render_guild=user_guild_object)
 
 
